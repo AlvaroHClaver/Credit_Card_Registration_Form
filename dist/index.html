@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./main.js" defer type="module"></script>
+  </head>
+  <body>
+    <main>
+      <section class="card-section-mobile">
+        <div class="card-back">
+          <div id="cvc">000</div>
+        </div>
+        <div class="card-front">
+          <img src="/images/card-logo.svg" alt="logo" id="logo-img" />
+          <div class="front-card-data">
+            <div id="card-number">0000 0000 0000 0000</div>
+            <div class="name-date-card">
+              <div id="card-name">JANE APPLESEED</div>
+              <div><span id="mm">00</span>/<span id="year">00</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="card-section-desktop">
+        <div class="card-front-desktop">
+          <img src="/images/card-logo.svg" alt="logo" id="logo-img" />
+          <div class="front-card-data">
+            <div id="card-number-desktop">0000 0000 0000 0000</div>
+            <div class="name-date-card">
+              <div id="card-name-desktop">JANE APPLESEED</div>
+              <div>
+                <span id="mm-desktop">00</span>/<span id="year-desktop"
+                  >00</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-back-desktop">
+          <div id="cvc-desktop">000</div>
+        </div>
+      </section>
+      <section class="form-section-on" id="form-section">
+        <div id="name-container" class="form-label-position">
+          <label for="name">CARDHOLDER NAME</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder=" e.g. Jane Appleseed"
+          />
+        </div>
+        <div class="form-label-position" id="number-container">
+          <label for="number">CARD NUMBER</label>
+          <input
+            type="text"
+            name="number"
+            id="number"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+        </div>
+        <div class="date-form-position">
+          <div class="exp-date-container">
+            <label for="date">EXP. DATE(MM/YY)</label>
+            <div class="date-input">
+              <input type="text" placeholder="MM" id="MM" />
+              <input type="text" placeholder="YY" id="YY" />
+            </div>
+          </div>
+          <div class="cvc-form">
+            <label for="security-code">CVC</label>
+            <input
+              type="text"
+              name="cvc"
+              id="security-code"
+              placeholder="e.g. 123"
+            />
+          </div>
+        </div>
+        <button id="confirm">Confirm</button>
+      </section>
+      <section class="thanks-section-off" id="thaks-section">
+        <img src="/images/icon-complete.svg" alt="complete" />
+        <p id="thanks-txt">THANK YOU!</p>
+        <p id="msg-txt">We've added your card details</p>
+        <button onClick="window.location.reload()">Continue</button>
+      </section>
+    </main>
+  </body>
+</html>
