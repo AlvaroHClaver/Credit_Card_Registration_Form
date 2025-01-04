@@ -13,7 +13,7 @@ main {
   flex-direction: column;
 }
 .card-section-mobile {
-  background-image: url("/images/bg-main-mobile.png");
+  background-image: url("./images/bg-main-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -25,7 +25,7 @@ main {
   display: none;
 }
 .card-back {
-  background-image: url("/images/bg-card-back.png");
+  background-image: url("./images/bg-card-back.png");
   background-position: center;
   background-size: cover;
   width: 262px;
@@ -51,7 +51,7 @@ main {
   letter-spacing: 2px;
 }
 .card-front {
-  background-image: url("/images/bg-card-front.png");
+  background-image: url("./images/bg-card-front.png");
   background-position: center;
   background-size: cover;
   width: 262px;
@@ -202,13 +202,13 @@ button {
     gap: 25px;
     min-height: 100vh;
     width: 30%;
-    background-image: url("/images/bg-main-desktop.png");
+    background-image: url("./images/bg-main-desktop.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
   .card-front-desktop {
-    background-image: url("/images/bg-card-front.png");
+    background-image: url("./images/bg-card-front.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -219,7 +219,7 @@ button {
     margin-left: 60%;
   }
   .card-back-desktop {
-    background-image: url("/images/bg-card-back.png");
+    background-image: url("./images/bg-card-back.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
